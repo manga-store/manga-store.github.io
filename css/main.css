@@ -1,0 +1,205 @@
+body {
+	font-family: "Roboto", Times, serif;
+}
+
+a, a:hover {
+	/* text-decoration: none; */
+	color: #212529;
+}
+
+.gray {
+color: #8f8f8f;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	background-color: #343a40;
+}
+
+.navbar {
+height: 60px;
+}
+
+.offset {
+	height: 60px;
+}
+
+.main_navbar {
+	background-color: white;
+}
+
+.dropdown-item:active {
+	background-color: #212529;
+}
+
+.main_navbar .navbar_item {
+	margin-left: 30px;
+}
+
+.logo{
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.logo:hover{
+	text-decoration: none;
+}
+
+header {
+	height: 100vh;
+	background-image: url(../img/bg_header_index.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+}
+
+header > .container {
+	height: inherit;
+}
+
+header > .container > .row {
+	height: inherit;
+}
+
+.header_text {
+	margin-top: 100px;
+}
+.header_text h2, h1{
+	color: black;
+	font-weight: bold;
+	line-height: 0.7;
+}
+
+.header_text h2 {
+font-size: 40px;
+}
+
+.header_text h1 {
+	font-size: 55px;
+}
+
+.search_navbar {
+	background-color: #212529;
+	color: white;
+}
+
+.search_navbar .navbar_item {
+	margin-right: 30px;
+}
+
+.search_navbar a, .search_navbar a:hover {
+	color: white;
+}
+
+.goods a:hover{
+	text-decoration: none;
+}
+
+.good {
+	margin: 20px 0;
+}
+
+.card-title {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.card-text, .card-cost {
+	margin-bottom: 0;
+}
+
+.card-cost {
+	margin-top: 10px;
+}
+
+.page-link, .page-link:hover {
+	color: #212529;
+}
+
+.page-item.active .page-link {
+	background-color: #212529;
+	border-color: #212529;
+}
+
+.card-long-buttons {
+	margin-top: 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.basket-button-img {
+	height: 23px;
+	margin: 1px;
+}
+
+.buy {
+	margin: 20px 0;
+}
+
+.buy p{
+	margin-top: auto;
+}
+
+.jumbotron {
+	border-radius: 0;
+	color: white;
+	height: 50px;
+	padding: 0;
+	line-height: 50px;
+	background-color: black;
+	margin-bottom: 0;
+}
+
+.jumbotron p {
+	margin: 0;
+}
+
+.display-none {
+	display: none;
+}
+
+.shadowh {
+transition: 0.2s;
+}
+
+.shadowh:hover {
+	box-shadow: 0 3px 12px 0px #00000033;
+}
+
+@media screen and (max-device-width: 1200px) {
+	.header_text h2 {
+		font-size: 30px;
+		text-shadow: 0px 0px 6px #fff;
+		}
+		
+		.header_text h1 {
+			font-size: 45px;
+			text-shadow: 0px 0px 6px #fff;
+		}
+ }
+
+ @media screen and (max-device-width: 992px) {
+	.header_text h2 {
+		font-size: 20px;
+		text-shadow: 0px 0px 6px #fff;
+		}
+		
+		.header_text h1 {
+			font-size: 30px;
+			text-shadow: 0px 0px 6px #fff;
+		}
+ }
+
+ @media screen and (max-device-width: 770px) {
+	header {
+		height: 30vh;
+	}
+	.header_text h2 {
+		font-size: 20px;
+		text-shadow: 0px 0px 6px #fff;
+		}
+		
+		.header_text h1 {
+			font-size: 30px;
+			text-shadow: 0px 0px 6px #fff;
+		}
+ }

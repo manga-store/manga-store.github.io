@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="манга">
+	<meta name="keywords" content="манга, магазин">
+	<meta name="author" content="Трофимов Юрий">
+	<link rel="shortcut icon" href="img/icon/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Manga</title>
+</head>
+
+<nav class="navbar fixed-top main_navbar">
+	<div class="container">
+		<a class="navbar_item logo" href="index.html">MANGA STORE</a>
+		<div class="d-flex  justify-content-end">
+			<a class="navbar_item">Главная</a>
+			<a class="navbar_item basket display-none" href="basket.html">Корзина</a>
+			<a class="navbar_item desires display-none" href="desires.html">Мои желания</a>
+
+			<a class="navbar_item login_buttom" href="#" data-toggle="modal" data-target="#modalLogin">Войти</a>
+
+			<div class="btn-group account_login display-none">
+					<a class="navbar_item account_login_text"  data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false" href="desires.html">Relorer</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item exit_button" href="#">Выйти</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</nav>
+
+
+<!-- Modal -->
+<div class="modal" id="modalLogin">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab"
+							aria-controls="pills-login" aria-selected="true">Вход</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="pills-registration-tab" data-toggle="pill" href="#pills-registration" role="tab"
+							aria-controls="pills-registration" aria-selected="false">Регистрация</a>
+					</li>
+				</ul>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<div class="modal-body">
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+						<form action="#">
+							<div class="form-group">
+								<label for="uname">Логин:</label>
+								<input type="text" class="form-control uname_login" id="uname" placeholder="Введите логин" required>
+							</div>
+							<div class="form-group">
+								<label for="pwd">Пароль:</label>
+								<input type="password" class="form-control password_login" id="pwd" placeholder="Введите пароль"
+									required>
+								<div class="invalid-feedback"></div>
+							</div>
+							<button type="submit" class="btn btn-dark uname_button">Войти</button>
+						</form>
+					</div>
+					<div class="tab-pane fade" id="pills-registration" role="tabpanel" aria-labelledby="pills-registration-tab">
+						<form action="#">
+							<div class="form-group">
+
+								<label for="uname">Логин:</label>
+								<input type="text" class="form-control uname_registration" id="uname" placeholder="Введите логин"
+									required>
+								<div class="invalid-feedback"></div>
+							</div>
+
+							<div class="form-group">
+								<label for="pwd">Пароль:</label>
+								<input type="password" class="form-control password_registration" id="pwd" placeholder="Введите пароль"
+									required>
+								<div class="invalid-feedback"></div>
+							</div>
+							<button type="submit" class="btn btn-dark registration_button">Зарегистрироваться</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- /Modal -->
+
+
+<header>
+	<div class="container">
+		<div class="row d-flex align-items-center">
+			<div class="col-5 header_text">
+				<h2>У НАС ТОЛЬКО</h2>
+				<h1>ЛУЧШАЯ МАНГА</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<nav class="navbar search_navbar">
+	<div class="container">
+		<div class="d-flex  justify-content-start">
+			<a class="navbar_item" href="">Манга</a>
+		</div>
+		<form class="form-inline">
+			<input class="form-control mr-sm-2 search_input" type="text" placeholder="attack on titan">
+			<button class="btn btn-outline-light my-2 my-sm-0 button_search" type="button">Искать</button>
+		</form>
+	</div>
+</nav>
+
+
+
+<section class="content">
+
+	<div class="container">
+		<div class="row goods index_goods">
+		</div>
+	</div>
+
+	<nav aria-label="...">
+		<ul class="pagination justify-content-center">
+			<li class="page-item disabled">
+				<a class="page-link" href="#" aria-label="Previous">
+					<span aria-hidden="true">&laquo;</span>
+					<span class="sr-only">Предыдущая</span>
+				</a>
+			</li>
+			<li class="page-item active"><a class="page-link" href="#">1</a></li>
+			<li class="page-item">
+				<a class="page-link" href="#" aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+					<span class="sr-only">Следующая</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+</section>
+
+<footer class="jumbotron text-center">
+	<p>Copyright &copy; 2019. Трофимов Юрий</p>
+</footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="манга">
+	<meta name="keywords" content="манга, магазин">
+	<meta name="author" content="Трофимов Юрий">
+	<link rel="shortcut icon" href="img/icon/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Manga</title>
+</head>
+
+<nav class="navbar fixed-top main_navbar">
+	<div class="container">
+		<a class="navbar_item logo" href="index.html">MANGA STORE</a>
+		<div class="d-flex  justify-content-end">
+			<a class="navbar_item" href="index.html">Главная</a>
+			<a class="navbar_item">Корзина</a>
+			<a class="navbar_item" href="desires.html">Мои желания</a>
+			<div class="btn-group account_login">
+					<a class="navbar_item account_login_text"  data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false" href="desires.html">Relorer</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item exit_button" href="#">Выйти</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<div class="offset"></div>
+
+<nav class="navbar search_navbar">
+	<div class="container">
+		<div class="d-flex justify-content-start">
+			<a class="navbar_item" href="">Корзина</a>
+		</div>
+	</div>
+</nav>
+
+<section>
+
+	<div class="container">
+		<div class="row goods basket_goods">
+		</div>
+	</div>
+
+</section>
+
+<div class="buy">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<p>Общая стоимость: <span class="totalcost"></span> ₽</p>
+			</div>
+			<div class="col d-flex  justify-content-end">
+			<button type="button" class="btn btn-success">Перейти к оплате</button>
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<footer class="jumbotron text-center footer">
+	<p>Copyright &copy; 2019. Трофимов Юрий</p>
+</footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
